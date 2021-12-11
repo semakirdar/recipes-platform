@@ -43,8 +43,157 @@
                 </div>
             </div>
         </div>
-    </div>
 
+        <div class="latest-recipes">
+            <h3 class="py-3">The Latest Recipes</h3>
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-3">
+                    <div class="recipes-item pt-3">
+                        <img src="{{ asset('images/latest-image1.jpeg') }}">
+                        <div class="image-text">
+                            <div class="category my-4">
+                                category
+                            </div>
+                            <div class="title">
+                                <p>
+                                    Almond Flour Pancakes
+                                </p>
+                            </div>
+                            <div class="time">
+                                <span>June 8, 2021</span> - <span><i class="far fa-clock"></i> 75 min Cook</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-3">
+                    <div class="recipes-item pt-3">
+                        <img src="{{ asset('images/latest-image2.jpeg') }}">
+                        <div class="image-text">
+                            <div class="category my-4">
+                                category
+                            </div>
+                            <div class="title">
+                                <p>
+                                    Taiwanese Popcorn Chicken
+                                </p>
+                            </div>
+                            <div class="time">
+                                <span>June 8, 2021</span> - <span><i class="far fa-clock"></i> 75 min Cook</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-3">
+                    <div class="recipes-item pt-3">
+                        <img src="{{ asset('images/latest-image5.jpeg') }}">
+                        <div class="image-text">
+                            <div class="category my-4">
+                                category
+                            </div>
+                            <div class="title">
+                                <p>
+                                    Homemade Oatmeal Chocolate Chip Cookie Crisp Cereal
+                                </p>
+                            </div>
+                            <div class="time">
+                                <span>June 8, 2021</span> - <span><i class="far fa-clock"></i> 75 min Cook</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-3">
+                    <div class="recipes-item pt-3">
+                        <img src="{{ asset('images/latest-image6.jpeg') }}">
+                        <div class="image-text">
+                            <div class="category my-4">
+                                category
+                            </div>
+                            <div class="title">
+                                <p>
+                                    Spicy Serrano Pineapple Margarita.
+                                </p>
+                            </div>
+                            <div class="time">
+                                <span>June 8, 2021</span> - <span><i class="far fa-clock"></i> 75 min Cook</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-3">
+                    <div class="recipes-item pt-3">
+                        <img src="{{ asset('images/latest-image1.jpeg') }}">
+                        <div class="image-text">
+                            <div class="category my-4">
+                                category
+                            </div>
+                            <div class="title">
+                                <p>
+                                    Almond Flour Pancakes
+                                </p>
+                            </div>
+                            <div class="time">
+                                <span>June 8, 2021</span> - <span><i class="far fa-clock"></i> 75 min Cook</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-3">
+                    <div class="recipes-item pt-3">
+                        <img src="{{ asset('images/latest-image2.jpeg') }}">
+                        <div class="image-text">
+                            <div class="category my-4">
+                                category
+                            </div>
+                            <div class="title">
+                                <p>
+                                    Taiwanese Popcorn Chicken
+                                </p>
+                            </div>
+                            <div class="time">
+                                <span>June 8, 2021</span> - <span><i class="far fa-clock"></i> 75 min Cook</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-3">
+                    <div class="recipes-item pt-3">
+                        <img src="{{ asset('images/latest-image5.jpeg') }}">
+                        <div class="image-text">
+                            <div class="category my-4">
+                                category
+                            </div>
+                            <div class="title">
+                                <p>
+                                    Homemade Oatmeal Chocolate Chip Cookie Crisp Cereal
+                                </p>
+                            </div>
+                            <div class="time">
+                                <span>June 8, 2021</span> - <span><i class="far fa-clock"></i> 75 min Cook</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-3">
+                    <div class="recipes-item pt-3">
+                        <img src="{{ asset('images/latest-image6.jpeg') }}">
+                        <div class="image-text">
+                            <div class="category my-4">
+                                category
+                            </div>
+                            <div class="title">
+                                <p>
+                                    Spicy Serrano Pineapple Margarita.
+                                </p>
+                            </div>
+                            <div class="time">
+                                <span>June 8, 2021</span> - <span><i class="far fa-clock"></i> 75 min Cook</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 @endsection()
