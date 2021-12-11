@@ -17779,3 +17779,142 @@ button.toast-close-button {
 .latest-recipes h3, .latest-recipes .h3 {
   border-bottom: 1px solid #89121b;
 }
+
+.random-recipes .random-item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+.random-recipes .random-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.random-recipes .random-item .random-image {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.random-recipes .random-item .random-image::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: all 0.2s ease-in-out;
+}
+.random-recipes .random-item .random-image:hover::after {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.random-recipes .random-item .random-image:hover .image-text {
+  margin-bottom: 20px;
+}
+.random-recipes .random-item .image-text {
+  position: absolute;
+  z-index: 1;
+  color: white;
+  bottom: 120px;
+  transition: all 0.35s ease-in-out;
+}
+.random-recipes .random-item .image-text .category {
+  background-color: #89121b;
+  padding: 5px 25px;
+  display: inline-block;
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.random-recipes .random-item .image-text .category::before {
+  content: " ";
+  position: absolute;
+  border-radius: 30px;
+  left: 0;
+  top: 0;
+  transition: all 0.5s ease-out;
+  width: 0;
+  height: 100%;
+  background-color: #808081;
+  z-index: -1;
+}
+.random-recipes .random-item .image-text .category:hover:before {
+  width: 100%;
+}
+.random-recipes .random-item .image-text .title p {
+  font-size: 30px;
+}
+.random-recipes .random-item .image-text .time {
+  font-size: 15px;
+}
+.random-recipes .random-hover::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: all 0.2s ease-in-out;
+}
+.random-recipes .random-hover:hover::after {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.random-recipes .random-hover:hover .image-text {
+  margin-bottom: 20px;
+}
+
+.footer {
+  padding: 50px 0;
+  color: white !important;
+  background-color: #000000;
+}
+.footer h5, .footer .h5 {
+  font-size: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #89121b;
+}
+.footer img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 200px;
+  margin-bottom: 35px;
+}
+.footer .navbar-nav .nav-item .nav-link {
+  color: white !important;
+}
+.footer .image-text {
+  color: white;
+}
+.footer .image-text .category {
+  background-color: #89121b;
+  padding: 5px 25px;
+  display: inline-block;
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.footer .image-text .category::before {
+  content: " ";
+  position: absolute;
+  border-radius: 30px;
+  left: 0;
+  top: 0;
+  transition: all 0.5s ease-out;
+  width: 0;
+  height: 100%;
+  background-color: #808081;
+  z-index: -1;
+}
+.footer .image-text .category:hover:before {
+  width: 100%;
+}
+.footer .image-text .time {
+  font-size: 12px;
+  font-weight: lighter;
+}
