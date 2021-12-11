@@ -4,7 +4,7 @@
         <h3>Nefis Soslu Tavuk Pirzola</h3>
         <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-9">
-                <img src="{{ asset('images/hero-image1.jpeg') }}">
+                <img class="img-fluid" src="{{ asset('images/hero-image1.jpeg') }}">
             </div>
             <div class="col-sm-12 col-md-12 col-lg-3">
                 <div>
