@@ -10,4 +10,9 @@ class HomeController extends Controller
     {
         return view('site.home');
     }
+
+    public function show()
+    {
+        return view('site.detail');
+    }
 }
