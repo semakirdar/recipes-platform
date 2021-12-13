@@ -19,6 +19,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/detail', [HomeController::class, 'show'])->name('detail.show');
+
 Route::get('/login', [LoginController::class, 'login'])->name('login');
+Route::get('/login/store', [LoginController::class, 'store'])->name('login.store');
+
 Route::get('/register', [RegisterController::class, 'register'])->name('register');
+
 include 'admin.php';

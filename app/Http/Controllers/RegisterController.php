@@ -10,4 +10,7 @@ class RegisterController extends Controller
     {
         return view('site.register');
     }
+    public function store(){
+
+    }
 }

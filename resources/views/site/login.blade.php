@@ -8,7 +8,7 @@
                         <h2>Login</h2>
                     </div>
                     <div class="card-body">
-                        <form method="post" action="#">
+                        <form method="post" action="{{ route('login.store') }}">
                             <div class="mb-3">
                                 <label class="text-muted">E-posta</label>
                                 <input class="form-control" name="eposta">
