@@ -17918,3 +17918,62 @@ button.toast-close-button {
   font-size: 12px;
   font-weight: lighter;
 }
+
+.detail .star-icons i {
+  font-size: 22px;
+  color: #ffc107;
+}
+.detail .star-icons span {
+  font-size: 13px;
+}
+.detail .detail-header {
+  border: 1px solid #d3d1d1;
+  padding: 30px;
+}
+.detail .recipe-detail-image img {
+  width: 100%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.detail .user-info {
+  text-align: center;
+}
+.detail .user-info .user-image img {
+  width: 80px;
+  height: 80px;
+}
+.detail .user-info p {
+  margin: 0;
+}
+.detail .user-info .follower {
+  font-size: 13px;
+  font-weight: lighter;
+}
+.detail .recipe-info-item {
+  border-bottom: 1px solid #d3d1d1;
+}
+.detail .recipe-info-item:last-child {
+  border: none;
+}
+.detail .recipe-action-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.detail .recipe-action-buttons .button-item {
+  border-right: 1px solid #d3d1d1;
+  padding: 0 40px;
+}
+.detail .recipe-action-buttons .button-item:last-child {
+  border: none;
+}
+.detail .recipe-action-buttons .button-item i {
+  font-size: 22px;
+}
+.detail .recipe-action-buttons .button-item p {
+  color: #ffc107;
+}
+.detail .recipe-action-buttons .button-item button:focus {
+  box-shadow: none;
+}
