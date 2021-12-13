@@ -17670,6 +17670,9 @@ button.toast-close-button {
   justify-content: center;
   padding: 20px 0;
 }
+.navbar .nav-item .nav-link .login-icon {
+  font-size: 25px;
+}
 
 .hero .hero-item {
   position: relative;
@@ -18001,6 +18004,7 @@ button.toast-close-button {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .login .card {
   padding: 20px;

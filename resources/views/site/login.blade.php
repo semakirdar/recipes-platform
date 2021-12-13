@@ -16,7 +16,7 @@
                                 <label class="text-muted">E-posta</label>
                                 <input class="form-control" name="eposta">
                             </div>
-                            <div class="mb-3">
+                            <div class="mb-4">
                                 <label class="text-muted">Password</label>
                                 <input type="password" class="form-control" name="password">
                             </div>

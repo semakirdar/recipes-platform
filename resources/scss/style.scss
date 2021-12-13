@@ -9,7 +9,14 @@
     .navbar-collapse {
         justify-content: center;
         padding: 20px 0;
+    }
 
+    .nav-item {
+        .nav-link {
+            .login-icon {
+                font-size: 25px;
+            }
+        }
     }
 }
 
@@ -460,6 +467,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 
     .card {
         padding: 20px;
@@ -475,5 +483,6 @@
 
         }
     }
+
 
 }

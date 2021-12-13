@@ -31,9 +31,6 @@
                             <a class="nav-link" href="{{ route('detail.show') }}">Detail</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{route('login')}}">Login</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="#">Basic</a>
                         </li>
                         <li class="nav-item">
@@ -43,7 +40,8 @@
                             <a class="nav-link" href="#">Easy</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="{{route('login')}}"> <i class="fas fa-user-circle login-icon"></i>
+                                <span>Login</span> </a>
                         </li>
 
                     </ul>
