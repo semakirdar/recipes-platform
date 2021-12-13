@@ -16,7 +16,9 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route::get('test', function () {
+    echo Hash::make('zguH82QR&U!&');
+});
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/detail', [HomeController::class, 'show'])->name('detail.show');
