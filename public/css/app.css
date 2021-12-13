@@ -17982,8 +17982,10 @@ button.toast-close-button {
   background-color: #e7ecf2;
 }
 .detail-content .recipe {
+  padding: 50px;
   background-color: white;
 }
 .detail-content .recipe ul {
+  font-size: 20px;
   margin-bottom: unset;
 }

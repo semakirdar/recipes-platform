@@ -84,7 +84,7 @@
     <div class="detail-content py-4">
         <div class="container">
             <div class="recipe">
-                <h5>Nefis Soslu Tavuk Pirzola Tarifi İçin Malzemeler</h5>
+                <h4>Nefis Soslu Tavuk Pirzola Tarifi İçin Malzemeler</h4>
                 <ul>
                     <li>
                         8 parça kemiksiz derisiz tavuk pirzola
@@ -106,7 +106,6 @@
                 </ul>
             </div>
         </div>
-
     </div>
 
 @endsection()
