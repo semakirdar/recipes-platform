@@ -17948,7 +17948,6 @@ button.toast-close-button {
 }
 .detail .user-info .follower {
   font-size: 13px;
-  font-weight: lighter;
 }
 .detail .recipe-info-item {
   border-bottom: 1px solid #d3d1d1;
@@ -17985,7 +17984,21 @@ button.toast-close-button {
   padding: 50px;
   background-color: white;
 }
+.detail-content .recipe .info span {
+  padding: 5px;
+  border-right: 2px solid #d3d1d1;
+}
+.detail-content .recipe .info span:last-child {
+  border: none;
+}
 .detail-content .recipe ul {
   font-size: 20px;
   margin-bottom: unset;
+}
+
+.login {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

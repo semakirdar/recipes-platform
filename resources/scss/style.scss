@@ -389,8 +389,6 @@
 
         .follower {
             font-size: 13px;
-            font-weight: lighter;
-
         }
     }
 
@@ -439,9 +437,28 @@
         padding: 50px;
         background-color: white;
 
+        .info {
+            span {
+                padding: 5px;
+                border-right: 2px solid #d3d1d1;
+
+                &:last-child {
+                    border: none;
+                }
+            }
+        }
+
         ul {
             font-size: 20px;
             margin-bottom: unset;
         }
     }
+}
+
+.login {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }

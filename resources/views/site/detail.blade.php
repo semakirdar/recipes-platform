@@ -25,7 +25,7 @@
                                     <img class="img-fluid" src="{{ asset('images/default-avatar.png') }}">
                                 </div>
                                 <p>aysununmutfaklezzeti</p>
-                                <p class="follower pb-3">2.594 Takipçi</p>
+                                <p class="follower pb-3 text-muted">2.594 Takipçi</p>
                                 <form method="post" action="#">
                                     <button class="btn btn-danger btn-sm form-control">Takip Et</button>
                                 </form>
@@ -84,6 +84,10 @@
     <div class="detail-content py-4">
         <div class="container">
             <div class="recipe">
+                <div class="text-muted info mb-4">
+                    <span><i class="fas fa-cookie-bite"></i> 4-6 kişilik</span>
+                    <span><i class="fas fa-user-clock"></i>15dk Hazırlık, 25dk Pişirme</span>
+                </div>
                 <h4>Nefis Soslu Tavuk Pirzola Tarifi İçin Malzemeler</h4>
                 <ul>
                     <li>
