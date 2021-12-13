@@ -41,7 +41,8 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{route('login')}}"> <i class="fas fa-user-circle login-icon"></i>
-                                <span>Login</span> </a>
+                                <span> @auth {{ auth()->user()->name }} @elseauth login @endauth</span>
+                            </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{route('register')}}"> <i

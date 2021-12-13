@@ -9,9 +9,10 @@
                     </div>
                     <div class="card-body">
                         <form method="post" action="{{ route('login.store') }}">
+                            @csrf
                             <div class="mb-3">
-                                <label class="text-muted">E-posta</label>
-                                <input class="form-control" name="eposta">
+                                <label class="text-muted">Email</label>
+                                <input class="form-control" name="email">
                             </div>
                             <div class="mb-4">
                                 <label class="text-muted">Password</label>
