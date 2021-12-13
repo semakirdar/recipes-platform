@@ -1,3 +1,7 @@
+body {
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+
 .header-logo {
     border-bottom: 1px solid $primary;
     padding: 10px 0;
@@ -18,7 +22,7 @@
             }
 
             .register-icon {
-                font-size: 20px;
+                font-size: 19px;
             }
         }
     }
@@ -419,6 +423,20 @@
         .button-item {
             border-right: 1px solid #d3d1d1;
             padding: 0 40px;
+            transition: all .4s ease;
+
+            &:hover {
+                background-color: $primary;
+                color: white;
+
+                p {
+                    color: white;
+                }
+
+                button {
+                    color: white;
+                }
+            }
 
             &:last-child {
                 border: none;
@@ -480,13 +498,22 @@
             border-bottom: none;
         }
 
-        .login-close-button {
-            a {
-                float: right;
-            }
-
-        }
     }
+}
 
+.register {
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 
+    .card {
+        padding: 20px;
+
+        .card-header {
+            border-bottom: none;
+        }
+
+    }
 }

@@ -3,11 +3,8 @@
     <div class="container">
         <div class="login">
             <div class="col-sm-12 col-md-12 col-lg-5">
-                <div class="card">
-                    <div class="login-close-button">
-                        <a href="{{ route('home') }}"><i class="fas fa-times"></i></a>
-                    </div>
-                    <div class="card-header bg-white text-center text-danger">
+                <div class="card shadow">
+                    <div class="card-header bg-white text-center text-primary">
                         <h2>Login</h2>
                     </div>
                     <div class="card-body">
@@ -20,7 +17,7 @@
                                 <label class="text-muted">Password</label>
                                 <input type="password" class="form-control" name="password">
                             </div>
-                            <button class="form-control btn btn-danger">Login</button>
+                            <button class="form-control btn btn-primary">Login</button>
                         </form>
                     </div>
 

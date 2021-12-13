@@ -2,14 +2,11 @@
 @section('content')
     <div class="container">
         <div class="register">
-            <div class="col-sm-12 col-md-12 col-lg-5">
-                <div class="card">
-                    <div class="card-header">
-                        <div class="login-close-button">
-                            <a href="{{ route('home') }}"><i class="fas fa-times"></i></a>
-                        </div>
-                        <div class="card-header bg-white text-center text-danger">
-                            <h2>Login</h2>
+            <div class="col-sm-12 col-md-12 col-lg-7">
+                <div class="card shadow">
+                    <div class="card-header bg-white">
+                        <div class="card-header bg-white text-center text-primary">
+                            <h2>Register</h2>
                         </div>
                     </div>
                     <div class="card-body">
@@ -35,10 +32,9 @@
                                 <input class="form-control" name="user_name">
                             </div>
 
-                            <button class="form-control btn btn-danger">Login</button>
+                            <button class="form-control btn btn-primary">Login</button>
                         </form>
                     </div>
-
                 </div>
             </div>
         </div>
