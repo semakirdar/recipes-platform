@@ -21,9 +21,11 @@ class CreateRecipesTable extends Migration
             $table->string('prepare_time');
             $table->string('cooking_time');
             $table->integer('serving');
-            $table->longText('description');
-
+            $table->string('description');
             $table->timestamps();
+
+            $table->foreign('category_id')->references('id')->on('categories');
+            $table->foreign('user_id')->references('id')->on('users');
         });
     }
 

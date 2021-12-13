@@ -19,6 +19,7 @@ class CreateIngredientsTable extends Migration
             $table->string('name');
             $table->integer('sort_order');
 
+            $table->foreign('recipe_id')->references('id')->on('recipes');
             $table->timestamps();
         });
     }

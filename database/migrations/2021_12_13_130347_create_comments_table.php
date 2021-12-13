@@ -19,6 +19,8 @@ class CreateCommentsTable extends Migration
             $table->unsignedBigInteger('recipe_id');
             $table->string('body');
             $table->timestamps();
+
+            $table->foreign('id')->references('id')->on('recipes');
         });
     }
 
