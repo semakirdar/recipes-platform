@@ -17671,7 +17671,10 @@ button.toast-close-button {
   padding: 20px 0;
 }
 .navbar .nav-item .nav-link .login-icon {
-  font-size: 25px;
+  font-size: 23px;
+}
+.navbar .nav-item .nav-link .register-icon {
+  font-size: 20px;
 }
 
 .hero .hero-item {

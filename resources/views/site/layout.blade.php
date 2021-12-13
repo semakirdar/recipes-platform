@@ -43,6 +43,11 @@
                             <a class="nav-link" href="{{route('login')}}"> <i class="fas fa-user-circle login-icon"></i>
                                 <span>Login</span> </a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{route('login')}}"> <i
+                                    class="fas fa-user-plus register-icon"></i>
+                                <span>Register</span></a>
+                        </li>
 
                     </ul>
                 </div>
