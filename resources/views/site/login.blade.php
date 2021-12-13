@@ -2,25 +2,28 @@
 @section('content')
     <div class="container">
         <div class="login">
-            <div class="col-sm-12 col-md-12 col-lg-6">
+            <div class="col-sm-12 col-md-12 col-lg-5">
                 <div class="card">
-                    <div class="card-header">
-
+                    <div class="login-close-button">
+                        <a href="{{ route('home') }}"><i class="fas fa-times"></i></a>
+                    </div>
+                    <div class="card-header bg-white text-center text-danger">
+                        <h2>Login</h2>
                     </div>
                     <div class="card-body">
-
+                        <form method="post" action="#">
+                            <div class="mb-3">
+                                <label class="text-muted">E-posta</label>
+                                <input class="form-control" name="eposta">
+                            </div>
+                            <div class="mb-3">
+                                <label class="text-muted">Password</label>
+                                <input type="password" class="form-control" name="password">
+                            </div>
+                            <button class="form-control btn btn-danger">Login</button>
+                        </form>
                     </div>
-                    <form method="post" action="#">
-                        <div class="mb-3">
-                            <label>E-posta</label>
-                            <input class="form-control" name="eposta">
-                        </div>
-                        <div class="mb-3">
-                            <label>Password</label>
-                            <input type="password" class="form-control" name="password">
-                        </div>
-                        <button class="form-control btn btn-danger">Login</button>
-                    </form>
+
                 </div>
 
             </div>

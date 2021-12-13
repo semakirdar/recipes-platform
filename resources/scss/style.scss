@@ -461,4 +461,19 @@
     justify-content: center;
     align-items: center;
 
+    .card {
+        padding: 20px;
+
+        .card-header {
+            border-bottom: none;
+        }
+
+        .login-close-button {
+            a {
+                float: right;
+            }
+
+        }
+    }
+
 }

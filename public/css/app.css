@@ -18002,3 +18002,12 @@ button.toast-close-button {
   justify-content: center;
   align-items: center;
 }
+.login .card {
+  padding: 20px;
+}
+.login .card .card-header {
+  border-bottom: none;
+}
+.login .card .login-close-button a {
+  float: right;
+}
