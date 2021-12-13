@@ -1,7 +1,7 @@
 @extends('site.layout')
 @section('content')
     <div class="container">
-        <div class="detail py-4">
+        <div class="detail pt-4">
             <h3>Nefis Soslu Tavuk Pirzola</h3>
             <div class="star-icons mb-4">
                 <i class="fas fa-star"></i>
@@ -80,6 +80,33 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="detail-content py-4">
+        <div class="container">
+            <div class="recipe">
+                <h5>Nefis Soslu Tavuk Pirzola Tarifi İçin Malzemeler</h5>
+                <ul>
+                    <li>
+                        8 parça kemiksiz derisiz tavuk pirzola
+                    </li>
+                    <li>
+                        4 yemek kaşığı sıvı yağ
+                    </li>
+                    <li>Tuz, karabiber,kekik, kırmızı toz biber</li>
+                    <li>5 yemek kaşığı sıvı yağ</li>
+                    <li>1 küçük soğan</li>
+                    <li>400 gr mantar</li>
+                    <li>1 çay bardağı sut</li>
+                    <li>1 paket krema</li>
+                    <li>1 çay bardağı rendelenmiş kaşar peyniri</li>
+                    <li>1 yemek kaşığı nişasta (az sütle açılmış)</li>
+                    <li>2 diş rendelenmiş sarımsak</li>
+                    <li>Tuz, kırmızı toz biber,az köri,karabiber</li>
+                    <li>Dereotu</li>
+                </ul>
+            </div>
+        </div>
+
     </div>
 
 @endsection()

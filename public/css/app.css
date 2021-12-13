@@ -17977,3 +17977,13 @@ button.toast-close-button {
 .detail .recipe-action-buttons .button-item button:focus {
   box-shadow: none;
 }
+
+.detail-content {
+  background-color: #e7ecf2;
+}
+.detail-content .recipe {
+  background-color: white;
+}
+.detail-content .recipe ul {
+  margin-bottom: unset;
+}
