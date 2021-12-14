@@ -36,9 +36,16 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">Chicken</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Easy</a>
-                        </li>
+
+                        @auth
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="fas fa-plus-square"></i>
+                                    <span>Recipe Add</span>
+                                </a>
+                            </li>
+                        @endauth
+
                         <li class="nav-item">
                             <a class="nav-link" href="{{route('login')}}"> <i class="fas fa-user-circle login-icon"></i>
                                 @auth  <span> {{ auth()->user()->name }}</span>@endauth
