@@ -24,6 +24,11 @@ body {
             .register-icon {
                 font-size: 19px;
             }
+
+            &.active {
+                background-color: $primary;
+                color: white;
+            }
         }
     }
 }

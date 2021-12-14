@@ -17680,6 +17680,10 @@ body {
 .navbar .nav-item .nav-link .register-icon {
   font-size: 19px;
 }
+.navbar .nav-item .nav-link.active {
+  background-color: #89121b;
+  color: white;
+}
 
 .hero .hero-item {
   position: relative;

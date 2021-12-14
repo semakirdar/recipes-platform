@@ -9,10 +9,8 @@ class RegisterController extends Controller
 {
     public function register()
     {
-        if(Auth::check())
+     
         return view('site.register');
     }
-    public function store(){
 
-    }
 }

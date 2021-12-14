@@ -16,7 +16,7 @@
 
     </div>
     <div class="header-nav">
-        <nav class="navbar navbar-expand-lg navbar-light ">
+        <nav class="navbar navbar-expand-lg navbar-light header-nav">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,7 +25,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="{{ route('home') }}">Home</a>
+                            <a class="nav-link" aria-current="page" href="{{ route('home') }}">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('detail.show') }}">Detail</a>
@@ -41,15 +41,28 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{route('login')}}"> <i class="fas fa-user-circle login-icon"></i>
-                                <span> @auth {{ auth()->user()->name }} @elseauth login @endauth</span>
+                                @auth  <span> {{ auth()->user()->name }}</span>@endauth
+                                @guest <span>Login</span> @endguest
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{route('register')}}"> <i
-                                    class="fas fa-user-plus register-icon"></i>
+                            <a class="nav-link" href="{{route('register')}}">
+                                <i class="fas fa-user-plus register-icon"></i>
                                 <span>Register</span></a>
                         </li>
+                        @auth
+                            <li class="nav-item">
+                                <a class="nav-link">
+                                    <form method="post" action="{{ route('logout') }}">
+                                        @csrf
+                                        <button class="btn">
+                                            <i class="fas fa-times-circle">Logout</i>
+                                        </button>
+                                    </form>
+                                </a>
+                            </li>
 
+                        @endauth
                     </ul>
                 </div>
             </div>

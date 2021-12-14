@@ -5245,6 +5245,13 @@ __webpack_require__(/*! @popperjs/core */ "./node_modules/@popperjs/core/lib/ind
 __webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap.esm.js");
 
 window.toastr = __webpack_require__(/*! toastr */ "./node_modules/toastr/toastr.js");
+var navLinks = document.querySelectorAll('.header-nav a');
+var path = location.pathname;
+navLinks.forEach(function (item, i) {
+  if (item.getAttribute('href').indexOf(path) > -1) {
+    item.classList.add('active');
+  }
+});
 
 /***/ }),
 

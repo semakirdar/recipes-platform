@@ -20,7 +20,7 @@ Route::get('test', function () {
     echo Hash::make('zguH82QR&U!&');
 });
 
-Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/detail', [HomeController::class, 'show'])->name('detail.show');
 
 Route::get('/login', [LoginController::class, 'login'])->name('login');

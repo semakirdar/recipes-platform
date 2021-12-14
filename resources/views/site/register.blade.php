@@ -32,7 +32,7 @@
                                 <input class="form-control" name="user_name">
                             </div>
 
-                            <button class="form-control btn btn-primary">Login</button>
+                            <button class="form-control btn btn-primary">Register</button>
                         </form>
                     </div>
                 </div>
