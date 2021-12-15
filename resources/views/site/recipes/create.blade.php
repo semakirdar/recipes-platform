@@ -7,7 +7,7 @@
                 <div class="col-sm-12 col-md-12 col-lg-6">
                     <div class="card">
                         <div class="card-body">
-                            <form method="post" action="{{ route('recipes.store') }}">
+                            <form method="post" action="{{ route('recipes.store') }}" >
                                 @csrf
                                 <div class="mb-3">
                                     <label>Name</label>
@@ -37,6 +37,10 @@
                                 <div class="mb-3">
                                     <label>Description</label>
                                     <textarea rows="4" class="form-control" name="description"></textarea>
+                                </div>
+                                <div class="mb-3">
+                                    <label>Image</label>
+                                    <input type="file" name="image" class="form-control">
                                 </div>
 
                                 <button class="btn btn-primary form-control">Add</button>
