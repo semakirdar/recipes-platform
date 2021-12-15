@@ -39,6 +39,16 @@
                                     <textarea rows="4" class="form-control" name="description"></textarea>
                                 </div>
                                 <div class="mb-3">
+                                    <label>Ingredient</label>
+                                    <i class="fas fa-plus-circle addButton"></i>
+                                    <div id="ingredientList">
+                                        <div class="ingredient-box mb-4">
+                                            <input class="form-control me-2" name="ingredients[]">
+                                            <i class="fas fa-minus-circle removeButton"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
                                     <label>Image</label>
                                     <input type="file" name="image" class="form-control">
                                 </div>

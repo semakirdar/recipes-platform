@@ -528,5 +528,11 @@ body {
 
     .card {
         padding: 20px;
+
+        .ingredient-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
     }
 }

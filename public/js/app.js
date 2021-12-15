@@ -5252,6 +5252,25 @@ navLinks.forEach(function (item, i) {
     item.classList.add('active');
   }
 });
+var addButton = document.querySelector('.addButton');
+var removeButton = document.querySelector('.removeButton');
+removeButton.addEventListener('click', function (e) {
+  remove(e);
+});
+addButton.addEventListener('click', function () {
+  console.log('tıklanıldı');
+  var ingredientBox = document.querySelector('.ingredient-box');
+  var clone = ingredientBox.cloneNode(true);
+  document.getElementById('ingredientList').appendChild(clone);
+  var cloneButton = clone.querySelector('.removeButton');
+  cloneButton.addEventListener('click', function (e) {
+    remove(e);
+  });
+});
+
+function remove(e) {
+  e.target.parentElement.remove();
+}
 
 /***/ }),
 

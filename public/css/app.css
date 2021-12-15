@@ -18055,3 +18055,8 @@ body {
 .recipe-create .card {
   padding: 20px;
 }
+.recipe-create .card .ingredient-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

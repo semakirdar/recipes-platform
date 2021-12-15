@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\Recipes\StoreRequest;
 use App\Models\Category;
 use App\Models\Recipe;
 use Illuminate\Http\Request;
@@ -16,7 +17,7 @@ class RecipeController extends Controller
         ]);
     }
 
-    public function store(Request $request)
+    public function store(StoreRequest $request)
     {
         $recipe = Recipe::query()->create([
             'user_id' => auth()->user()->id,
