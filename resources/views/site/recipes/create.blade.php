@@ -8,6 +8,7 @@
                     <div class="card">
                         <div class="card-body">
                             <form method="post" action="{{ route('recipes.store') }}">
+                                @csrf
                                 <div class="mb-3">
                                     <label>Name</label>
                                     <input name="name" class="form-control">

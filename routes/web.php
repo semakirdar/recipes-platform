@@ -33,6 +33,6 @@ Route::post('/logout', [LogoutController::class, 'logout'])->name('logout');
 Route::get('/register', [RegisterController::class, 'register'])->name('register');
 
 Route::get('/recipes/create', [RecipeController::class, 'create'])->name('recipes.create');
-Route::get('/recipes/store', [RecipeController::class, 'store'])->name('recipes.store');
+Route::post('/recipes/store', [RecipeController::class, 'store'])->name('recipes.store');
 
 include 'admin.php';
