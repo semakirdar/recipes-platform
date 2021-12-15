@@ -9,7 +9,12 @@ class LoginController extends Controller
 {
     public function login()
     {
-        return view('site.login');
+        if (!Auth::check()) {
+            return view('site.login');
+        } else {
+            return view('site.home');
+        }
+
     }
 
     public function store(Request $request)

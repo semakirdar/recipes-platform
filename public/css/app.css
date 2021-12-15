@@ -18066,3 +18066,11 @@ body {
 .recipe-create .card .ingredient-box:hover i {
   display: block;
 }
+
+.categories .category-item {
+  width: 100px;
+  border: 1px solid grey;
+  display: inline-block;
+  text-align: center;
+  padding: 5px;
+}

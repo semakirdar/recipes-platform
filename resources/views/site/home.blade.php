@@ -190,6 +190,15 @@
                 </div>
             </div>
         </div>
+        <div class="categories">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-3">
+                    <div class="category-item">
+                        category1
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="random-recipes py-5">

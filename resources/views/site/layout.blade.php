@@ -44,19 +44,28 @@
                                     <span>Recipe Add</span>
                                 </a>
                             </li>
-                        @endauth
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{route('login')}}"> <i class="fas fa-user-circle login-icon"></i>
-                                @auth  <span> {{ auth()->user()->name }}</span>@endauth
-                                @guest <span>Login</span> @endguest
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{route('register')}}">
-                                <i class="fas fa-user-plus register-icon"></i>
-                                <span>Register</span></a>
-                        </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"> <i
+                                        class="fas fa-user-circle login-icon"></i>
+                                    <span> {{ auth()->user()->name }}</span>
+
+                                </a>
+                            </li>
+                        @endauth
+                        @guest
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{route('login')}}"> <i
+                                        class="fas fa-user-circle login-icon"></i>
+                                    <span>Login</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{route('register')}}">
+                                    <i class="fas fa-user-plus register-icon"></i>
+                                    <span>Register</span></a>
+                            </li>
+                        @endguest
                         @auth
                             <li class="nav-item">
                                 <form method="post" action="{{ route('logout') }}">
@@ -67,7 +76,6 @@
                                     </button>
                                 </form>
                             </li>
-
                         @endauth
                     </ul>
                 </div>
