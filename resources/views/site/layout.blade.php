@@ -39,7 +39,7 @@
 
                         @auth
                             <li class="nav-item">
-                                <a class="nav-link" href="#">
+                                <a class="nav-link" href="{{ route('recipes.create') }}">
                                     <i class="fas fa-plus-square"></i>
                                     <span>Recipe Add</span>
                                 </a>
@@ -59,14 +59,13 @@
                         </li>
                         @auth
                             <li class="nav-item">
-                                <a class="nav-link">
-                                    <form method="post" action="{{ route('logout') }}">
-                                        @csrf
-                                        <button class="btn">
-                                            <i class="fas fa-times-circle">Logout</i>
-                                        </button>
-                                    </form>
-                                </a>
+                                <form method="post" action="{{ route('logout') }}">
+                                    @csrf
+                                    <button class="btn nav-link">
+                                        <i class="fas fa-times-circle login-icon"></i>
+                                        Logout
+                                    </button>
+                                </form>
                             </li>
 
                         @endauth

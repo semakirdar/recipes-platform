@@ -18048,3 +18048,10 @@ body {
 .register .card .card-header {
   border-bottom: none;
 }
+
+.recipe-create {
+  padding: 50px;
+}
+.recipe-create .card {
+  padding: 20px;
+}
