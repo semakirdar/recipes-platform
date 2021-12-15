@@ -7,7 +7,7 @@
                 <div class="col-sm-12 col-md-12 col-lg-6">
                     <div class="card">
                         <div class="card-body">
-                            <form method="post" action="{{ route('recipes.store') }}" >
+                            <form method="post" action="{{ route('recipes.store') }}" enctype="multipart/form-data">
                                 @csrf
                                 <div class="mb-3">
                                     <label>Name</label>

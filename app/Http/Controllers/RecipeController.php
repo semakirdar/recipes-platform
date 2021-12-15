@@ -27,6 +27,9 @@ class RecipeController extends Controller
             'serving' => $request->serving,
             'description' => $request->description
         ]);
+
+        $recipe->addMediaFromRequest('image')->toMediaCollection();
+
         return redirect()->route('home');
     }
 }
