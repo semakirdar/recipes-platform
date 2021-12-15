@@ -18060,3 +18060,9 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.recipe-create .card .ingredient-box i {
+  display: none;
+}
+.recipe-create .card .ingredient-box:hover i {
+  display: block;
+}

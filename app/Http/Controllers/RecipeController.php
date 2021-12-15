@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\Recipes\StoreRequest;
 use App\Models\Category;
+use App\Models\Ingredient;
 use App\Models\Recipe;
 use Illuminate\Http\Request;
 
@@ -27,7 +28,18 @@ class RecipeController extends Controller
             'cooking_time' => $request->cooking_time,
             'serving' => $request->serving,
             'description' => $request->description
+
         ]);
+        foreach ($request->ingredients as $ingredient) {
+
+           Ingredient::query()->create([
+                'recipe_id' => $recipe->id,
+                'name' => $ingredient,
+                'sort_order' => 0
+
+            ]);
+        }
+
 
         $recipe->addMediaFromRequest('image')->toMediaCollection();
 

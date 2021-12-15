@@ -14,15 +14,18 @@ navLinks.forEach(function (item, i) {
 
 let addButton = document.querySelector('.addButton');
 let removeButton = document.querySelector('.removeButton');
+let ingredientBox = document.querySelector('.ingredient-box');
+
 
 removeButton.addEventListener('click', function (e) {
     remove(e);
 });
 addButton.addEventListener('click', function () {
     console.log('tıklanıldı');
-    let ingredientBox = document.querySelector('.ingredient-box');
     let clone = ingredientBox.cloneNode(true);
     document.getElementById('ingredientList').appendChild(clone);
+    clone.querySelector('input').value = '';
+
     let cloneButton = clone.querySelector('.removeButton');
     cloneButton.addEventListener('click', function (e) {
         remove(e);
@@ -30,8 +33,13 @@ addButton.addEventListener('click', function () {
 });
 
 function remove(e) {
-    e.target.parentElement.remove();
+    let ingredientBoxes = document.querySelectorAll('.ingredient-box');
+    if (ingredientBoxes.length > 1) {
+        e.target.parentElement.remove();
+    }
+
 }
+
 
 
 

@@ -533,6 +533,16 @@ body {
             display: flex;
             justify-content: space-between;
             align-items: center;
+
+            i {
+                display: none;
+            }
+            &:hover {
+                i {
+                    display: block;
+                }
+            }
+
         }
     }
 }

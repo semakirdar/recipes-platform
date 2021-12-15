@@ -40,11 +40,11 @@
                                 </div>
                                 <div class="mb-3">
                                     <label>Ingredient</label>
-                                    <i class="fas fa-plus-circle addButton"></i>
+                                    <i class="fas fa-plus-circle addButton text-success"></i>
                                     <div id="ingredientList">
                                         <div class="ingredient-box mb-4">
                                             <input class="form-control me-2" name="ingredients[]">
-                                            <i class="fas fa-minus-circle removeButton"></i>
+                                            <i class="fas fa-minus-circle removeButton text-primary"></i>
                                         </div>
                                     </div>
                                 </div>
