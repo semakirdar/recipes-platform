@@ -7,6 +7,7 @@ use App\Models\Category;
 use App\Models\Ingredient;
 use App\Models\Recipe;
 use Illuminate\Http\Request;
+use Intervention\Image\Facades\Image;
 
 class RecipeController extends Controller
 {
@@ -32,17 +33,23 @@ class RecipeController extends Controller
         ]);
         foreach ($request->ingredients as $ingredient) {
 
-           Ingredient::query()->create([
+            Ingredient::query()->create([
                 'recipe_id' => $recipe->id,
                 'name' => $ingredient,
                 'sort_order' => 0
 
             ]);
         }
-
-
         $recipe->addMediaFromRequest('image')->toMediaCollection();
 
         return redirect()->route('home');
+    }
+
+    public function show($id)
+    {
+        $recipe = Recipe::query()->where('id', $id)->with(['ingredients', 'user'])->first();
+        return view('site.recipes.show', [
+            'recipe' => $recipe
+        ]);
     }
 }

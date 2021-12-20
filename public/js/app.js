@@ -5245,6 +5245,22 @@ __webpack_require__(/*! @popperjs/core */ "./node_modules/@popperjs/core/lib/ind
 __webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap.esm.js");
 
 window.toastr = __webpack_require__(/*! toastr */ "./node_modules/toastr/toastr.js");
+window.$ = window.jQuery = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+var recipeButtons = document.querySelectorAll('.btn-recipe');
+recipeButtons.forEach(function (item, i) {
+  item.addEventListener('click', function () {
+    var id = this.dataset.id;
+    $.ajax({
+      url: '/ajax/detail/' + id,
+      method: 'GET',
+      dataType: 'JSON',
+      success: function success(result) {
+        document.getElementById('recipe-name').innerHTML = result.data.name;
+        document.getElementById('recipe-description').innerHTML = result.data.description;
+      }
+    });
+  });
+});
 var navLinks = document.querySelectorAll('.header-nav a');
 var path = location.pathname;
 navLinks.forEach(function (item, i) {

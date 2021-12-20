@@ -2,6 +2,24 @@ require('./bootstrap');
 require('@popperjs/core');
 require('bootstrap');
 window.toastr = require('toastr');
+window.$ = window.jQuery = require('jquery');
+
+let recipeButtons = document.querySelectorAll('.btn-recipe');
+recipeButtons.forEach(function(item, i){
+    item.addEventListener('click', function () {
+        let id = this.dataset.id;
+
+        $.ajax({
+            url: '/ajax/detail/' + id,
+            method: 'GET',
+            dataType: 'JSON',
+            success: function (result) {
+                document.getElementById('recipe-name').innerHTML = result.data.name;
+                document.getElementById('recipe-description').innerHTML = result.data.description;
+            }
+        })
+    });
+});
 
 let navLinks = document.querySelectorAll('.header-nav a');
 let path = location.pathname;
@@ -39,7 +57,5 @@ function remove(e) {
     }
 
 }
-
-
 
 

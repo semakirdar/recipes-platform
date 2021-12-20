@@ -388,7 +388,7 @@ body {
     .recipe-detail-image {
         img {
             width: 100%;
-            height: 400px;
+          
             object-fit: cover;
         }
     }
@@ -524,10 +524,27 @@ body {
 }
 
 .recipe-create {
+    background-image: url("/images/create-bg.jpeg");
     padding: 50px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 99;
+
+
+    &::after {
+        content: '';
+        background-color: rgba(black, 40%);
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
 
     .card {
         padding: 20px;
+        z-index: 999;
 
         .ingredient-box {
             display: flex;
@@ -549,11 +566,15 @@ body {
 }
 
 .categories {
+    h3 {
+        border-bottom: 1px solid $primary;
+    }
+
     .category-item {
-        width: 100px;
-        border: 1px solid grey;
+        width: 155px;
         display: inline-block;
         text-align: center;
         padding: 5px;
+        color: white;
     }
 }

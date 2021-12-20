@@ -17946,7 +17946,6 @@ body {
 }
 .detail .recipe-detail-image img {
   width: 100%;
-  height: 400px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -18050,10 +18049,25 @@ body {
 }
 
 .recipe-create {
+  background-image: url("/images/create-bg.jpeg");
   padding: 50px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 99;
+}
+.recipe-create::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
 }
 .recipe-create .card {
   padding: 20px;
+  z-index: 999;
 }
 .recipe-create .card .ingredient-box {
   display: flex;
@@ -18067,10 +18081,13 @@ body {
   display: block;
 }
 
+.categories h3, .categories .h3 {
+  border-bottom: 1px solid #89121b;
+}
 .categories .category-item {
-  width: 100px;
-  border: 1px solid grey;
+  width: 155px;
   display: inline-block;
   text-align: center;
   padding: 5px;
+  color: white;
 }

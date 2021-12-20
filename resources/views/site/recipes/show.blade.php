@@ -15,7 +15,7 @@
                 <div class="row">
                     <div class="col-sm-12 col-md-12 col-lg-9">
                         <div class="recipe-detail-image">
-                            <img class="img-fluid" src="{{ asset('images/hero-image1.jpeg') }}">
+                            <img class="img-fluid" src="{{ $recipe->getFirstMediaUrl()  }}">
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-12 col-lg-3">
@@ -24,7 +24,7 @@
                                 <div class="user-image pb-3">
                                     <img class="img-fluid" src="{{ asset('images/default-avatar.png') }}">
                                 </div>
-                                <p>aysununmutfaklezzeti</p>
+                                <p>{{ $recipe->user->name }}</p>
                                 <p class="follower pb-3 text-muted">2.594 Takipçi</p>
                                 <form method="post" action="#">
                                     <button class="btn btn-primary btn-sm form-control">Takip Et</button>
@@ -70,32 +70,29 @@
                 <div class="col-sm-12 col-md-12 col-lg-7">
                     <div class="recipe">
                         <div class="text-muted info mb-4">
-                            <span><i class="fas fa-cookie-bite"></i> 4-6 kişilik</span>
-                            <span><i class="fas fa-user-clock"></i> 15dk Hazırlık, 25dk Pişirme</span>
+                            <span><i class="fas fa-cookie-bite"></i> {{ $recipe->serving }} kişilik</span>
+                            <span><i
+                                    class="fas fa-user-clock"></i> {{ $recipe->prepare_time }} dk Hazırlık, {{ $recipe->cooking_time }} dk Pişirme</span>
                         </div>
-                        <h4>Nefis Soslu Tavuk Pirzola Tarifi İçin Malzemeler</h4>
+                        <h4>{{ $recipe->name }} Tarifi İçin Malzemeler</h4>
                         <ul>
-                            <li>
-                                8 parça kemiksiz derisiz tavuk pirzola
-                            </li>
-                            <li>
-                                4 yemek kaşığı sıvı yağ
-                            </li>
-                            <li>Tuz, karabiber,kekik, kırmızı toz biber</li>
-                            <li>5 yemek kaşığı sıvı yağ</li>
-                            <li>1 küçük soğan</li>
-                            <li>400 gr mantar</li>
-                            <li>1 çay bardağı sut</li>
-                            <li>1 paket krema</li>
-                            <li>1 çay bardağı rendelenmiş kaşar peyniri</li>
-                            <li>1 yemek kaşığı nişasta (az sütle açılmış)</li>
-                            <li>2 diş rendelenmiş sarımsak</li>
-                            <li>Tuz, kırmızı toz biber,az köri,karabiber</li>
-                            <li>Dereotu</li>
+                            @foreach($recipe->ingredients as $ingredient)
+                                <li>
+                                    {{ $ingredient->name }}
+                                </li>
+                            @endforeach
                         </ul>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="comment-create">
+            <form>
+                <textarea></textarea>
+                <button>Add</button>
+            </form>
         </div>
     </div>
 

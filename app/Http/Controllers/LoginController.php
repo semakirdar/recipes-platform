@@ -14,7 +14,6 @@ class LoginController extends Controller
         } else {
             return view('site.home');
         }
-
     }
 
     public function store(Request $request)
@@ -27,6 +26,9 @@ class LoginController extends Controller
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
             return redirect()->route('home');
+        } else {
+            return redirect()->route('login');
         }
+
     }
 }
